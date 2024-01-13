@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.querySelector(".userInputList").appendChild(listElement);
     }
 
-    
+    let reverseButton = document.querySelector("#reverse");
+    reverseButton.addEventListener("click", );
 
 });
+
+
+function switchFirstAndLast(word){
+    word.charAt(word.length - 1) + word.substring(1, word.length - 1) + word.charAt(0);
+}
