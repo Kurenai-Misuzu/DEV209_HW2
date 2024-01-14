@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     // number of times the user is prompted
     let promptAmt = 3;
+
+    // hide reversed list
+    document.querySelector(".reversed").style.display = "none";
+
     // where the list of user answers will be saved
     userAnswers = [];
     // prompts the user three times to get words
@@ -14,12 +18,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.querySelector(".userInputList").appendChild(listElement);
     }
 
-    let reverseButton = document.querySelector("#reverse");
-    reverseButton.addEventListener("click", );
+    // reverses the list provided by the user
+    let reversedArray = userAnswers.map(switchFirstAndLast);
+    for (let i = 0; i < promptAmt; i++){
+        let listElement = document.createElement("li");
+        listElement.innerText = reversedArray[i];
+        document.querySelector(".reversedList").appendChild(listElement);
+    }
+
+    // reverse button, gives it an event Listener for when it is pressed
+    let reverseButton = document.querySelector("#reverseBtn");
+    reverseButton.addEventListener("click", reverseDisplay);
 
 });
 
-
+// function that switches the first and last letters of a word
 function switchFirstAndLast(word){
-    word.charAt(word.length - 1) + word.substring(1, word.length - 1) + word.charAt(0);
+    return word.charAt(word.length - 1) + word.substring(1, word.length - 1) + word.charAt(0);
+}
+
+// funciton that hides the user input div and the reverse button
+function reverseDisplay() {
+    document.querySelector(".userInput").style.display = "none";
+    document.querySelector("#reverseBtn").style.display = "none";
+    document.querySelector(".reversed").style.display = "block";
 }
