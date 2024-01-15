@@ -20,3 +20,12 @@ h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
 }
+
+#reverseBtn {
+    color: white;
+    background-color: lightskyblue;
+    text-align: center;
+    border-radius: 10%;
+    /* margin: 5px 10px; */
+    padding: 1.3em;
+}
