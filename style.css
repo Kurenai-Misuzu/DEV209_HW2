@@ -11,3 +11,11 @@ h2 {
 #userInputList{
     background-color: purple;
 }
+#reversedList{
+    color:green;
+    font-family:sans-serif;
+}
+#reversed{
+    color:red;
+    font-family:sans-serif;
+}
