@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.querySelector(".userInputList").appendChild(listElement);
     }
 
+    // adds the text that the first and last letters are swapped
+    let reversedHeader = document.createElement("p");
+    reversedHeader.textContent = "1st & last letters swapped";
+    document.querySelector(".reversedList").append(reversedHeader);
+
     // reverses the list provided by the user
     let reversedArray = userAnswers.map(switchFirstAndLast);
     for (let i = 0; i < promptAmt; i++){
@@ -25,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         listElement.innerText = reversedArray[i];
         document.querySelector(".reversedList").appendChild(listElement);
     }
+    
 
     // reverse button, gives it an event Listener for when it is pressed
     let reverseButton = document.querySelector("#reverseBtn");

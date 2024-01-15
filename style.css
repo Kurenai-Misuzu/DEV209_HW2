@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 body {
     margin: 50px;
     font-family: Helvetica, sans-serif;
@@ -9,13 +11,12 @@ h2 {
     font-family: sans-serif;
 }
 .userInputList{
-    background-color: purple;
-}
-.reversedList{
+    background-color: lightskyblue;
     color:green;
     font-family:sans-serif;
 }
-.reversed{
+.reversedList{
     color:red;
-    font-family:sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
 }
