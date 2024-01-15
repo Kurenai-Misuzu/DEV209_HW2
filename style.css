@@ -8,14 +8,14 @@ h2 {
     color: green;
     font-family: sans-serif;
 }
-#userInputList{
+.userInputList{
     background-color: purple;
 }
-#reversedList{
+.reversedList{
     color:green;
     font-family:sans-serif;
 }
-#reversed{
+.reversed{
     color:red;
     font-family:sans-serif;
 }
